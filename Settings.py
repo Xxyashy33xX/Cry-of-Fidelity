@@ -30,8 +30,3 @@ scaling_factor = width // number_of_rays
 Texture_size = 256
 Half_texture_size = Texture_size // 2
 
-#pg.draw.line(self.game.screen, "white", ((px * 100), (py * 100)),
-#                         ((100 * px) + (cos_A * 100 * main_depth), (100 * py) + (sin_A * 100 * main_depth))
-#
-
-#C:\Users\Aryan\PycharmProjects\pythonProject2\Resources
