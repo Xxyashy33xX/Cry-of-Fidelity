@@ -1,5 +1,7 @@
 import math
 
+# ALL THE GLOBAL VARIABLES
+
 res = width, height = 1440, 1000
 width_half = width // 2
 height_half = height // 2
