@@ -68,6 +68,7 @@ class Main_Game:
 		self.screen.blit(text, text_rect)
 		pg.display.flip()  # Updates the display to show the end screen
 		pg.time.wait(10000)  # Wait a few seconds before closing
+		
 	def draw(self):
 		#self.screen.fill("black")
 		self.object_renderer.draw()
