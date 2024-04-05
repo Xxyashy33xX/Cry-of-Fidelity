@@ -2,9 +2,9 @@ import pygame as pg
 from Settings import *
 import math
 
-class SpriteObject:
+class SpriteObject: # inisialise all variables
     def __init__(self, game, path='Resources/Sprites/Monster.png',
-                 pos=(11, 5), scale=0.7, shift=0.27, speed=0.0025):
+                 pos=(11, 5), scale=0.7, shift=0.27, speed=0.0025): 
         self.game = game
         self.player = game.player
         self.x, self.y = pos
