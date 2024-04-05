@@ -5,7 +5,7 @@ from main import Main_Game
 
 class myGame():
     def __init__(self):
-        pygame.init()
+        pygame.init() # inisialises all the variables
         self.running, self.playing = True, False
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False
         self.DISPLAY_W, self.DISPLAY_H = 480, 270
@@ -34,7 +34,7 @@ class myGame():
 
 
 
-    def check_events(self):
+    def check_events(self): # checks for user inputs
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.running, self.playing = False, False
@@ -49,10 +49,10 @@ class myGame():
                 if event.key == pygame.K_UP:
                     self.UP_KEY = True
 
-    def reset_keys(self):
+    def reset_keys(self): # resets the varibles to be presses again
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False
 
-    def draw_text(self, text, size, x, y ):
+    def draw_text(self, text, size, x, y ): # template for outputing text on the screen
         font = pygame.font.Font(self.font_name,size)
         text_surface = font.render(text, True, self.WHITE)
         text_rect = text_surface.get_rect()
